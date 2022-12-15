@@ -1,5 +1,16 @@
 function Home() {
-  return <div id="home">메인페이지</div>;
+  return (
+    <div
+      className="home"
+      style={{
+        height: "calc( 100vh - 100px )",
+        background: "white",
+        color: "black",
+      }}
+    >
+      메인페이지
+    </div>
+  );
 }
 
 export default Home;
