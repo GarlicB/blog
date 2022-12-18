@@ -3,9 +3,11 @@ function Footer() {
     <div
       className="footer"
       style={{
-        display: "inline-flex",
         alignItems: "center",
-        height: "60px",
+        display: "flex",
+        fontSize: "12px",
+        height: "40px",
+        justifyContent: "center",
         padding: "0 1rem",
       }}
     >

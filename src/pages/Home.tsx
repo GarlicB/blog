@@ -1,14 +1,20 @@
+import PostList from "./PostList";
+
 function Home() {
   return (
     <div
       className="home"
       style={{
-        height: "calc( 100vh - 100px )",
         background: "white",
         color: "black",
+        minHeight: "calc( 100vh - 80px )",
+        maxWidth: "1920px",
+        padding: "0 1rem",
       }}
     >
-      메인페이지
+      <div>
+        <PostList></PostList>
+      </div>
     </div>
   );
 }
