@@ -1,12 +1,10 @@
 import { useLocation, useNavigate } from "react-router-dom";
 import { lazy, Suspense } from "react";
+import Test from "../posts/2022/0101_테스트.mdx";
 
 function Post() {
   const { state, pathname } = useLocation();
-  const path = state.post.replace("src", "..");
-  const Login = lazy(() => {
-    return import(path);
-  });
+  //const path = state.post.replace("src", "..");
 
   return (
     <Suspense fallback={<div>loading...</div>}>
@@ -16,7 +14,7 @@ function Post() {
           padding: "1rem",
         }}
       >
-        <Login />
+        <Test />
       </div>
     </Suspense>
   );
