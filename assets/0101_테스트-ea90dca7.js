@@ -1,1 +1,0 @@
-import{j as t}from"./index-7d0861e3.js";function r(n){return t("h2",{children:"더미파일입니다"})}function c(n={}){const{wrapper:e}=n.components||{};return e?t(e,Object.assign({},n,{children:t(r,n)})):r()}export{c as default};

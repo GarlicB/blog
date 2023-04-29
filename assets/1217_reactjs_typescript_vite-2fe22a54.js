@@ -1,4 +1,4 @@
-import{j as e,a as c,F as t}from"./index-7d0861e3.js";const l=({children:i,color:n})=>e("div",{style:{backgroundColor:n,borderRadius:"2px",padding:"0.2rem"},children:i});function r(i){const n=Object.assign({h1:"h1",h2:"h2",p:"p",ul:"ul",li:"li"},i.components);return c(t,{children:[e(n.h1,{children:"React + Typescript + Vite로 정적블로그 구축하기"}),`
+import{j as e,a as c,F as t}from"./index-9c155521.js";const l=({children:i,color:n})=>e("div",{style:{backgroundColor:n,borderRadius:"2px",padding:"0.2rem"},children:i});function r(i){const n=Object.assign({h1:"h1",h2:"h2",p:"p",ul:"ul",li:"li"},i.components);return c(t,{children:[e(n.h1,{children:"React + Typescript + Vite로 정적블로그 구축하기"}),`
 `,e(n.h2,{children:"1. 블로그를 구축하기까지"}),`
 `,e(n.p,{children:`많은 개발자들이 커리어를 위해 열심히 공부하고 배운 것들을 블로그에 남기는 것에
 감명받아 언제나 그랬지만 늦게나마 기술블로그를 만들었다.`}),`
