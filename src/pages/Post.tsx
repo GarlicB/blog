@@ -4,7 +4,7 @@ import { lazy, Suspense } from "react";
 function Post() {
   const { state, pathname } = useLocation();
   const { path, idx } = state;
-  const PostComponent = lazy(() => import(path));
+  const PostComponent = lazy(() => import(decodeURI(path)));
 
   return (
     <div style={{ maxWidth: "1920px", padding: "1rem" }}>

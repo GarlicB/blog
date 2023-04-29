@@ -5,6 +5,8 @@ async function getPosts() {
   const files = import.meta.glob("../posts/**/*.mdx");
   const posts = [];
 
+  console.log(files);
+
   for (const path in files) {
     const file = await files[path]();
     posts.push({ path, file });
