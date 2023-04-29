@@ -1,22 +1,17 @@
-import { useLocation, useNavigate } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 import { lazy, Suspense } from "react";
-import Test from "../posts/2022/0101_테스트.mdx";
 
 function Post() {
   const { state, pathname } = useLocation();
-  //const path = state.post.replace("src", "..");
+  const { path, idx } = state;
+  const PostComponent = lazy(() => import(path));
 
   return (
-    <Suspense fallback={<div>loading...</div>}>
-      <div
-        style={{
-          maxWidth: "1920px",
-          padding: "1rem",
-        }}
-      >
-        <Test />
-      </div>
-    </Suspense>
+    <div style={{ maxWidth: "1920px", padding: "1rem" }}>
+      <Suspense fallback={<div>loading...</div>}>
+        <PostComponent key={idx} />
+      </Suspense>
+    </div>
   );
 }
 
