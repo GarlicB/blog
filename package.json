@@ -3,19 +3,17 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "homepage": ".",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
     "preview": "vite preview"
   },
   "dependencies": {
-    "@mdx-js/mdx": "^2.0.0-rc.2",
-    "@mdx-js/react": "^2.2.1",
-    "@mdx-js/rollup": "^2.2.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-router-dom": "^6.4.5",
-    "vite-plugin-mdx": "^3.5.11"
+    "react-markdown": "^8.0.7",
+    "react-router-dom": "^6.4.5"
   },
   "devDependencies": {
     "@types/react": "^18.0.26",

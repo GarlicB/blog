@@ -1,18 +1,42 @@
-import { Routes, Route } from "react-router-dom";
-import Layout from "./components/Layout";
-import Home from "./pages/Home";
-import Post from "./pages/Post";
+import React, { useState, useEffect } from "react";
+import { Route, Routes } from "react-router-dom";
+import { PostList } from "./components/PostList";
+import { Post } from "./components/Post";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
+
+type PostMetadata = {
+  title: string;
+  date: string;
+  slug: string;
+};
 
 function App() {
+  const [posts, setPosts] = useState<PostMetadata[]>([]);
+
+  const fetchPostsMetadata = async () => {
+    const response = await fetch("./posts/metadata.json", {
+      headers: {
+        Accept: "application/json",
+      },
+    });
+    const data = await response.json();
+    setPosts(data);
+  };
+
+  useEffect(() => {
+    fetchPostsMetadata();
+  }, []);
+
   return (
-    <div className="App">
+    <>
+      <Header />
       <Routes>
-        <Route element={<Layout />}>
-          <Route path="/blog" element={<Home />} />
-          <Route path="/blog/posts/:id" element={<Post />} />
-        </Route>
+        <Route path="/blog/" element={<PostList posts={posts} />} />
+        <Route path="/blog/posts/:postSlug" element={<Post />} />
       </Routes>
-    </div>
+      <Footer />
+    </>
   );
 }
 
