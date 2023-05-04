@@ -34,7 +34,10 @@ export const Post: React.FC = () => {
   return (
     <>
       {isLoading ? (
-        <p>...Loading...</p>
+        <div className="loading">
+          <span>Loading</span>
+          <span className="loading-dots">...</span>
+        </div>
       ) : mdSource ? (
         <>
           <ReactMarkdown className="markdown">{mdSource}</ReactMarkdown>
