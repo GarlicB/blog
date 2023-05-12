@@ -53,12 +53,37 @@ button:hover {
 }
 
 .home {
+  min-height: calc(100vh - 80px);
   background: #f0f2f5;
   color: #3a3a3a;
   flex: 1;
   display: flex;
   flex-direction: column;
   max-width: 1920px;
+}
+
+.home-button {
+  display: flex;
+  justify-content: center;
+  margin: 1.5em;
+  text-align: center;
+}
+
+.home-button a {
+  background-color: #4a4a4a;
+  color: #f1f1f1;
+  padding: 0.5rem 1rem;
+  border-radius: 3px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.home-button a:hover {
+  background-color: #3c3c3c;
+}
+
+.post {
+  min-height: calc(100vh - 80px);
 }
 
 .post-list-item {
@@ -81,26 +106,6 @@ button:hover {
 a {
   text-decoration: none;
   color: inherit;
-}
-
-.home-button {
-  display: flex;
-  justify-content: center;
-  margin: 1.5em;
-  text-align: center;
-}
-
-.home-button a {
-  background-color: #4a4a4a;
-  color: #f1f1f1;
-  padding: 0.5rem 1rem;
-  border-radius: 3px;
-  text-decoration: none;
-  transition: background-color 0.3s;
-}
-
-.home-button a:hover {
-  background-color: #3c3c3c;
 }
 
 .loading {
