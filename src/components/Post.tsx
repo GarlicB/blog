@@ -32,7 +32,7 @@ export const Post: React.FC = () => {
   }, [postSlug]);
 
   return (
-    <>
+    <div className="post">
       {isLoading ? (
         <div className="loading">
           <span>Loading</span>
@@ -46,6 +46,6 @@ export const Post: React.FC = () => {
           </div>
         </>
       ) : null}
-    </>
+    </div>
   );
 };
