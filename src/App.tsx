@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from "react";
 import { Route, Routes } from "react-router-dom";
-import { PostList } from "./components/PostList";
-import { Post } from "./components/Post";
-import Header from "./components/Header";
-import Footer from "./components/Footer";
+import { PostList } from "./components/pages/PostList";
+import { Post } from "./components/pages/Post";
+import Header from "./components/layout/Header";
+import Footer from "./components/layout/Footer";
 
 type PostMetadata = {
   title: string;
