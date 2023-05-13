@@ -27,7 +27,7 @@ React는 코드 스플리팅을 지원하여 번들 파일을 작은 청크(chun
 
 React에서는 Lazy Loading을 통해 필요한 컴포넌트만 동적으로 로딩할 수 있습니다. 이를 통해 초기 로딩 시간을 줄이고 필요한 시점에 컴포넌트를 로드할 수 있습니다. React.lazy와 Suspense를 사용하여 Lazy Loading을 구현할 수 있습니다.
 
-```jsx
+```js
 const LazyComponent = React.lazy(() => import("./LazyComponent"));
 
 function MyComponent() {
@@ -46,7 +46,7 @@ function MyComponent() {
 
 React 컴포넌트에서는 React.memo를 사용하여 메모이제이션을 적용할 수 있습니다. 메모이제이션은 이전에 계산된 결과를 저장하고, 동일한 인자로 함수가 호출될 경우 이전 결과를 반환하여 계산을 생략하는 기법입니다. 이를 활용하여 리렌더링을 최소화하고 성능을 향상시킬 수 있습니다.
 
-```jsx
+```js
 const MyComponent = React.memo(({ data }) => {
   // data를 기반으로 계산이 수행됩니다.
   // 계산 결과를 반환합니다.
