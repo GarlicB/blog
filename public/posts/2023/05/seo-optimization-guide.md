@@ -8,7 +8,7 @@ SEO(검색 엔진 최적화)는 웹 사이트의 가시성을 향상시키기 �
 
 키워드는 검색 엔진에서 사용자가 검색할 때 사용되는 단어나 구문입니다. 키워드 연구를 통해 관련성이 높은 키워드를 찾고, 해당 키워드를 웹 페이지의 제목, 본문, URL 등에 적절하게 사용해야 합니다. 이는 검색 엔진에서 웹 페이지의 주제를 이해하고 노출시키는 데 도움이 됩니다.
 
-```javascript
+```html
 // 키워드 사용 예시
 <title>SEO 최적화 가이드 - 최고의 SEO 전략과 팁</title>
 <h1>SEO 최적화 가이드</h1>
@@ -19,7 +19,7 @@ SEO(검색 엔진 최적화)는 웹 사이트의 가시성을 향상시키기 �
 
 웹 사이트의 구조는 검색 엔진에서 중요한 역할을 합니다. 웹 페이지들 사이의 내부 링크 구조를 잘 설계하여 검색 엔진이 웹 사이트를 크롤링하고 인덱싱하기 쉽게 만들어야 합니다. 또한, 외부 사이트로부터의 인바운드 링크(다른 사이트에서의 웹 페이지로의 링크)를 증가시키는 것도 중요합니다.
 
-```javascript
+```html
 // 내부 링크 사용 예시
 <a href="/seo-guide">SEO 최적화 가이드</a>
 <a href="/tips/keyword-research">키워드 연구 팁</a>
@@ -32,24 +32,22 @@ SEO(검색 엔진 최적화)는 웹 사이트의 가시성을 향상시키기 �
 
 웹 페이지의 로딩 속도는 검색 엔진 뿐만 아니라 사용자 경험에도 중요한 요소입니다. 빠른 페이지 로딩을 위해 이미지 최적화, 캐싱, 압축 등의 기술을 적용해야 합니다. 또한, 모바일 친화적인 웹 페이지 디자인과 반응형 웹 디자인을 구현하는 것이 좋습니다.
 
-```javascript
+```html
 // 이미지 최적화 예시
 <img src="/images/seo_image.jpg" alt="SEO 최적화 이미지" />
 
 // 모바일 친화적인 웹 페이지 디자인 예시
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-// 반응형 웹 디자인 예시
-@media screen and (max-width: 768px) {
-    /* 모바일 화면에 대한 스타일 지정 */
-}
+// 반응형 웹 디자인 예시 @media screen and (max-width: 768px) { /* 모바일 화면에
+대한 스타일 지정 */ }
 ```
 
 ## 4. 고유하고 풍부한 콘텐츠 제공
 
 검색 엔진은 고유하고 풍부한 콘텐츠를 선호합니다. 웹 페이지에 유용하고 정보가 풍부한 콘텐츠를 제공하여 사용자의 관심을 유발하고 공유되는 컨텐츠를 생성해야 합니다. 또한, 텍스트뿐만 아니라 이미지, 비디오, 인포그래픽 등 다양한 형식의 콘텐츠를 활용할 수 있습니다.
 
-```javascript
+```html
 // 다양한 형식의 콘텐츠 예시
 <img src="/images/seo_example.jpg" alt="SEO 예시 이미지" />
 <video src="/videos/seo_example.mp4" controls></video>
@@ -59,10 +57,16 @@ SEO(검색 엔진 최적화)는 웹 사이트의 가시성을 향상시키기 �
 
 소셜 미디어는 웹 사이트의 가시성과 트래픽을 증가시키는 데 도움이 됩니다. 웹 페이지의 소셜 공유 기능을 제공하고, 소셜 미디어에서의 홍보 및 마케팅을 통해 사용자들에게 웹 사이트를 알리고 공유할 수 있도록 해야 합니다.
 
-```javascript
+```html
 // 소셜 공유 기능 예시
-<a href="https://www.facebook.com/share?url=https://example.com" target="_blank">페이스북 공유</a>
-<a href="https://twitter.com/intent/tweet?url=https://example.com&text=SEO 최적화 가이드" target="_blank">트위터 공유</a>
+<a href="https://www.facebook.com/share?url=https://example.com" target="_blank"
+  >페이스북 공유</a
+>
+<a
+  href="https://twitter.com/intent/tweet?url=https://example.com&text=SEO 최적화 가이드"
+  target="_blank"
+  >트위터 공유</a
+>
 ```
 
 이렇게 다양한 SEO 최적화 기법을 적용하여 웹 페이지의 가시성과 순위를 향상시킬 수 있습니다. 키워드 연구, 웹 사이트 구조 및 링크, 속도 최적화, 고유한 콘텐츠 제공, 소셜 미디어 활용은 SEO에 대한 기본적인 전략입니다. 이를 참고하여 웹 사이트의 SEO를 개선하고 온라인에서의 경쟁력을 향상시킬 수 있습니다.

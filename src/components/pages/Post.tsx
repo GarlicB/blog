@@ -1,6 +1,8 @@
 import { useState, useEffect } from "react";
 import { Link, useParams } from "react-router-dom";
 import ReactMarkdown from "react-markdown";
+import rehypeHighlight from "rehype-highlight";
+import "highlight.js/styles/github.css"; // 하이라이팅에 사용할 CSS 스타일 import
 
 type PostProps = {
   year: string;
@@ -42,7 +44,9 @@ export const Post: React.FC = () => {
         </div>
       ) : mdSource ? (
         <>
-          <ReactMarkdown className="markdown">{mdSource}</ReactMarkdown>
+          <ReactMarkdown className="markdown" rehypePlugins={[rehypeHighlight]}>
+            {mdSource}
+          </ReactMarkdown>
           <div className="home-button">
             <Link to="/blog/">Home</Link>
           </div>
