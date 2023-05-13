@@ -54,6 +54,12 @@
     "slug": "programming-language-selection-guide"
   },
   {
+    "title": "Vite와 NextJS",
+    "summary": "React엔 무엇이 더 좋을까요? Vite를 함께 사용하여 웹 애플리케이션을 구축하는 방법과 ReactJS에 NextJS를 사용하여 구축하는 방법을 비교합니다",
+    "date": "2023-01-05",
+    "slug": "vite-vs-nextjs"
+  },
+  {
     "title": "첫 번째 포스트",
     "summary": "블로그를 시작하며...",
     "date": "2022-12-01",

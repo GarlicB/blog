@@ -59,14 +59,8 @@ SEO(검색 엔진 최적화)는 웹 사이트의 가시성을 향상시키기 �
 
 ```html
 // 소셜 공유 기능 예시
-<a href="https://www.facebook.com/share?url=https://example.com" target="_blank"
-  >페이스북 공유</a
->
-<a
-  href="https://twitter.com/intent/tweet?url=https://example.com&text=SEO 최적화 가이드"
-  target="_blank"
-  >트위터 공유</a
->
+<a href="https://example.com" target="_blank">페이스북 공유</a>
+<a href="https://example.com" target="_blank">트위터 공유</a>
 ```
 
 이렇게 다양한 SEO 최적화 기법을 적용하여 웹 페이지의 가시성과 순위를 향상시킬 수 있습니다. 키워드 연구, 웹 사이트 구조 및 링크, 속도 최적화, 고유한 콘텐츠 제공, 소셜 미디어 활용은 SEO에 대한 기본적인 전략입니다. 이를 참고하여 웹 사이트의 SEO를 개선하고 온라인에서의 경쟁력을 향상시킬 수 있습니다.
