@@ -1,0 +1,44 @@
+body {
+  background-color: #333;
+  color: #f0f2f5;
+}
+
+.header,
+.footer {
+  background-color: #222;
+  color: #aaa;
+}
+
+.home {
+  background-color: #333;
+}
+
+.post-list-item,
+.post-list-date,
+.post-list-summary {
+  color: lightgray;
+}
+
+.markdown {
+  background: #333;
+  color: #f0f2f5;
+}
+
+.markdown code {
+  background-color: #000;
+  color: white;
+}
+
+.move {
+  background-color: #5c5b5b;
+  color: white;
+}
+
+.loading {
+  background-color: rgba(0, 0, 0, 0.7);
+  color: rgba(255, 255, 255, 0.416);
+}
+
+.loading-dots::after {
+  color: #fff;
+}

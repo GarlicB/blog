@@ -14,16 +14,18 @@ type PostListProps = {
 
 export const PostList: React.FC<PostListProps> = ({ posts }) => {
   const [startIndex, setStartIndex] = useState(0);
-  const [endIndex, setEndIndex] = useState(5);
+  const [endIndex, setEndIndex] = useState(10);
 
   const handleNext = () => {
-    setStartIndex((prevStartIndex) => prevStartIndex + 5);
-    setEndIndex((prevEndIndex) => prevEndIndex + 5);
+    setStartIndex((prevStartIndex) => prevStartIndex + 10);
+    setEndIndex((prevEndIndex) => prevEndIndex + 10);
+    window.scrollTo(0, -40);
   };
 
   const handlePrev = () => {
-    setStartIndex((prevStartIndex) => prevStartIndex - 5);
-    setEndIndex((prevEndIndex) => prevEndIndex - 5);
+    setStartIndex((prevStartIndex) => prevStartIndex - 10);
+    setEndIndex((prevEndIndex) => prevEndIndex - 10);
+    window.scrollTo(0, -40);
   };
 
   const paginatedPosts = posts.slice(startIndex, endIndex);
@@ -56,12 +58,12 @@ export const PostList: React.FC<PostListProps> = ({ posts }) => {
       <div className="pagination">
         {startIndex > 0 && (
           <div className="move" onClick={handlePrev}>
-            이전
+            prev
           </div>
         )}
         {endIndex < posts.length && (
           <div className="move" onClick={handleNext}>
-            다음
+            next
           </div>
         )}
       </div>
