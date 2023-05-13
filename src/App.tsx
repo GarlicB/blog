@@ -34,7 +34,7 @@ function App() {
       <Header />
       <Routes>
         <Route path="/blog/" element={<PostList posts={posts} />} />
-        <Route path="/blog/posts/:postSlug" element={<Post />} />
+        <Route path="/blog/posts/:year/:month/:slug" element={<Post />} />
       </Routes>
       <Footer />
     </>

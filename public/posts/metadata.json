@@ -1,62 +1,62 @@
 [
   {
-    "title": "첫 번째 포스트",
-    "summary": "블로그를 시작하며...",
-    "date": "2023-05-03",
-    "slug": "230503_01"
-  },
-  {
-    "title": "프로그래밍 언어 선택 가이드",
-    "summary": "프로그래밍 언어를 선택하는데 도움이 되는 가이드",
-    "date": "2023-05-03",
-    "slug": "230503_02"
-  },
-  {
-    "title": "React로 웹 애플리케이션 구축하기",
-    "summary": "React를 사용하여 웹 애플리케이션을 구축하는 방법",
-    "date": "2023-05-03",
-    "slug": "230503_03"
-  },
-  {
-    "title": "UI/UX 디자인 팁 모음",
-    "summary": "UI/UX 디자인에서 유용한 팁과 가이드라인",
-    "date": "2023-05-04",
-    "slug": "230504_01"
-  },
-  {
-    "title": "웹 디자인 트렌드 예측",
-    "summary": "2023년 웹 디자인의 트렌드를 예측해봅니다.",
-    "date": "2023-05-05",
-    "slug": "230505_01"
-  },
-  {
-    "title": "데이터 시각화 가이드",
-    "summary": "데이터 시각화를 위한 가이드라인과 도구 소개",
-    "date": "2023-05-05",
-    "slug": "230505_02"
-  },
-  {
-    "title": "보안 취약점 점검 방법",
-    "summary": "애플리케이션의 보안 취약점을 점검하는 방법과 도구 소개",
-    "date": "2023-05-06",
-    "slug": "230506_01"
-  },
-  {
-    "title": "효율적인 코드 작성법",
-    "summary": "효율적인 코드 작성을 위한 팁과 관례",
-    "date": "2023-05-07",
-    "slug": "230507_01"
+    "title": "SEO 최적화 가이드",
+    "summary": "검색 엔진 최적화(SEO)를 위한 가이드라인과 팁",
+    "date": "2023-05-08",
+    "slug": "seo-optimization-guide"
   },
   {
     "title": "사용자 경험 개선을 위한 방법",
     "summary": "사용자 경험(UX)을 개선하기 위한 다양한 방법과 전략",
     "date": "2023-05-08",
-    "slug": "230508_01"
+    "slug": "methods-for-improving-user-experience"
   },
   {
-    "title": "SEO 최적화 가이드",
-    "summary": "검색 엔진 최적화(SEO)를 위한 가이드라인과 팁",
-    "date": "2023-05-08",
-    "slug": "230508_02"
+    "title": "효율적인 코드 작성법",
+    "summary": "효율적인 코드 작성을 위한 팁과 관례",
+    "date": "2023-05-07",
+    "slug": "efficient-coding-practices"
+  },
+  {
+    "title": "보안 취약점 점검 방법",
+    "summary": "애플리케이션의 보안 취약점을 점검하는 방법과 도구 소개",
+    "date": "2023-05-06",
+    "slug": "security-vulnerability-assessment-methods"
+  },
+  {
+    "title": "데이터 시각화 가이드",
+    "summary": "데이터 시각화를 위한 가이드라인과 도구 소개",
+    "date": "2023-05-05",
+    "slug": "data-visualization-guide"
+  },
+  {
+    "title": "웹 디자인 트렌드 예측",
+    "summary": "2023년 웹 디자인의 트렌드를 예측해봅니다.",
+    "date": "2023-05-05",
+    "slug": "web-design-trend-predictions"
+  },
+  {
+    "title": "UI/UX 디자인 팁 모음",
+    "summary": "UI/UX 디자인에서 유용한 팁과 가이드라인",
+    "date": "2023-05-04",
+    "slug": "ui-ux-design-tips-collection"
+  },
+  {
+    "title": "React로 웹 애플리케이션 구축하기",
+    "summary": "React를 사용하여 웹 애플리케이션을 구축하는 방법",
+    "date": "2023-05-03",
+    "slug": "building-web-applications-with-react"
+  },
+  {
+    "title": "프로그래밍 언어 선택 가이드",
+    "summary": "프로그래밍 언어를 선택하는데 도움이 되는 가이드",
+    "date": "2023-05-03",
+    "slug": "programming-language-selection-guide"
+  },
+  {
+    "title": "첫 번째 포스트",
+    "summary": "블로그를 시작하며...",
+    "date": "2023-02-01",
+    "slug": "my-first-posting"
   }
 ]

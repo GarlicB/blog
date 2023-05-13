@@ -3,19 +3,21 @@ import { Link, useParams } from "react-router-dom";
 import ReactMarkdown from "react-markdown";
 
 type PostProps = {
-  postSlug: string;
+  year: string;
+  month: string;
+  slug: string;
 };
 
 export const Post: React.FC = () => {
   const [mdSource, setMdSource] = useState<string | null>(null);
-  const { postSlug } = useParams<PostProps>();
+  const { year, month, slug } = useParams<PostProps>();
   const [isLoading, setIsLoading] = useState<boolean>(true);
 
   useEffect(() => {
     const fetchPostContent = async () => {
       try {
         setIsLoading(true);
-        const response = await fetch(`./posts/${postSlug}.md`);
+        const response = await fetch(`./posts/${year}/${month}/${slug}.md`);
         if (!response.ok) {
           throw new Error("Error fetching post");
         }
@@ -29,7 +31,7 @@ export const Post: React.FC = () => {
     };
 
     fetchPostContent();
-  }, [postSlug]);
+  }, [slug]);
 
   return (
     <div className="post">

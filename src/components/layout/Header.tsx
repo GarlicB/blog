@@ -12,7 +12,7 @@ function Header() {
       </div>
       <div
         onClick={() => {
-          navigate(`/blog/posts/about`);
+          navigate(`/blog/posts/2022/12/about`);
         }}
       >
         About
