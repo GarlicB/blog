@@ -2,13 +2,21 @@ import { useNavigate } from "react-router-dom";
 function Header() {
   const navigate = useNavigate();
   return (
-    <div
-      onClick={() => {
-        navigate(`/blog`, {});
-      }}
-      className="header"
-    >
-      GarlicB.log
+    <div className="header">
+      <div
+        onClick={() => {
+          navigate(`/blog`);
+        }}
+      >
+        GarlicB.log
+      </div>
+      <div
+        onClick={() => {
+          navigate(`/blog/posts/about`);
+        }}
+      >
+        About
+      </div>
     </div>
   );
 }

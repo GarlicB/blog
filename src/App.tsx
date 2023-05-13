@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import { Route, Routes } from "react-router-dom";
 import { PostList } from "./components/pages/PostList";
 import { Post } from "./components/pages/Post";
@@ -7,6 +7,7 @@ import Footer from "./components/layout/Footer";
 
 type PostMetadata = {
   title: string;
+  summary: string;
   date: string;
   slug: string;
 };
