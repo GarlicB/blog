@@ -36,7 +36,7 @@ export const Post: React.FC = () => {
       {isLoading ? (
         <div className="loading">
           <span>Loading</span>
-          <span className="loading-dots">...</span>
+          <span className="loading-dots" />
         </div>
       ) : mdSource ? (
         <>

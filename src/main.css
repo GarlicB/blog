@@ -135,8 +135,9 @@ a {
   font-weight: bold;
 }
 
-.loading-dots {
-  animation: loadingDots 0.5s linear infinite;
+.loading-dots::after {
+  content: ".";
+  animation: loadingDots 0.7s linear infinite;
 }
 
 @keyframes loadingDots {
@@ -146,11 +147,9 @@ a {
   33% {
     content: "..";
   }
+
   66% {
     content: "...";
-  }
-  100% {
-    content: ".";
   }
 }
 
