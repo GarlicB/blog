@@ -5,7 +5,7 @@ function Header() {
     <div className="header">
       <div
         onClick={() => {
-          navigate(`/blog`);
+          navigate(`/blog/`);
         }}
       >
         GarlicB.log
