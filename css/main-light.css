@@ -13,6 +13,10 @@ body {
   background: #f0f2f5;
 }
 
+.home-button a {
+  background-color: #3f51b5;
+}
+
 .post-list-item,
 .post-list-date,
 .post-list-summary {
@@ -37,6 +41,11 @@ body {
 .markdown a:hover {
   color: #0b47a0;
   text-decoration: underline;
+}
+
+.markdown code {
+  background-color: lavender;
+  padding: 0.2rem;
 }
 
 .move {
