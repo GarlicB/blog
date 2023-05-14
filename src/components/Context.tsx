@@ -35,7 +35,7 @@ export const ContextProvider: React.FC<ContextProviderProps> = ({
     link1 = document.createElement("link");
     link1.id = "main-darkmode";
     link1.rel = "stylesheet";
-    link1.href = isDarkMode ? "/src/main-dark.css" : "/src/main-light.css";
+    link1.href = isDarkMode ? "./main-dark.css" : "./main-light.css";
     document.head.appendChild(link1);
 
     // 2. Markdown Code Block Light <-> Dark Toggle
