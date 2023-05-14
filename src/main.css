@@ -25,36 +25,24 @@ div {
   display: flex;
   justify-content: space-between;
   height: 40px;
-  background-color: #3f51b5;
-  color: #ffffff;
 }
 
 .footer {
   display: grid;
+  font-size: 0.8rem;
   justify-content: center;
   align-items: center;
-  height: 120px;
+  height: 80px;
   text-align: center;
-  background-color: #3f51b5;
-  color: #ffffff;
 }
 
-.header div,
-.footer div {
+.header div {
   cursor: pointer;
 }
 
-.button {
-  background-color: #3f51b5;
-  border: none;
-  color: #f1f1f1;
-  cursor: pointer;
-  margin-top: 1rem;
-  padding: 0.5rem 1rem;
-}
-
-.button:hover {
-  background-color: #283593;
+.header .left {
+  display: flex;
+  gap: 0.4rem;
 }
 
 .home {
@@ -63,8 +51,7 @@ div {
   flex-direction: column;
   margin: auto;
   max-width: 1920px;
-  min-height: calc(100vh - 160px);
-  background: #f0f2f5;
+  min-height: calc(100vh - 120px);
 }
 
 .home-button {
@@ -93,7 +80,6 @@ div {
 
 .post-list-item {
   border-bottom: 1px solid #c5cae9;
-  color: #3a3a3a;
   font-weight: 600;
   margin: 0.2rem 0 0;
   padding: 1rem 2rem;
@@ -101,7 +87,6 @@ div {
 
 .post-list-year {
   border-bottom: solid 0.1rem silver;
-  color: gray;
   font-size: 2.4rem;
   font-weight: bold;
   margin: 1rem;
@@ -116,7 +101,6 @@ div {
 }
 
 .post-list-summary {
-  color: #666;
   font-size: 14px;
   font-weight: 350;
   line-height: 1.5;
@@ -139,7 +123,6 @@ div {
 }
 
 .move {
-  background-color: #3f51b5;
   border-radius: 3px;
   cursor: pointer;
   color: white;
@@ -160,8 +143,6 @@ a {
 
 .loading {
   align-items: center;
-  background-color: rgba(255, 255, 255, 0.7);
-  color: rgba(0, 0, 0, 0.416);
   display: flex;
   height: 100%;
   justify-content: center;
@@ -194,10 +175,8 @@ a {
 }
 
 .markdown {
-  background: #ffffff;
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  color: #333;
   line-height: 1.6;
   margin: auto;
   max-width: 800px;
@@ -210,23 +189,11 @@ a {
 .markdown h4,
 .markdown h5,
 .markdown h6 {
-  margin-bottom: 0.5em;
-  margin-top: 0.5em;
-}
-
-.markdown a {
-  color: #1a73e8;
-  text-decoration: none;
-  transition: color 0.3s;
-}
-
-.markdown a:hover {
-  color: #0b47a0;
-  text-decoration: underline;
+  margin-bottom: 1em;
+  margin-top: 1em;
 }
 
 .markdown code {
-  background-color: #e8e8e8;
   border-radius: 3px;
   padding: 0.5em;
   overflow-x: auto;
@@ -234,7 +201,6 @@ a {
 }
 
 .markdown pre {
-  background-color: #e8e8e8;
   border-radius: 3px;
 }
 
@@ -263,51 +229,4 @@ a {
   border: 0;
   height: 1px;
   margin: 1em 0;
-}
-
-/*Dark Mode*/
-@media (prefers-color-scheme: dark) {
-  body {
-    background-color: #333;
-    color: #f0f2f5;
-  }
-
-  .header,
-  .footer {
-    background-color: #222;
-    color: #aaa;
-  }
-
-  .home {
-    background-color: #333;
-  }
-
-  .post-list-item,
-  .post-list-date,
-  .post-list-summary {
-    color: lightgray;
-  }
-
-  .markdown {
-    background: #333;
-    color: #f0f2f5;
-  }
-
-  .markdown code {
-    background-color: #000;
-    color: white;
-  }
-
-  .move {
-    background-color: #5c5b5b;
-  }
-
-  .loading {
-    background-color: rgba(0, 0, 0, 0.7);
-    color: rgba(255, 255, 255, 0.416);
-  }
-
-  .loading-dots::after {
-    color: #fff;
-  }
 }

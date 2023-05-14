@@ -19,14 +19,24 @@ body {
   color: lightgray;
 }
 
+.post-list-item {
+  border-bottom: 1px solid #5e4a5d;
+}
+
 .markdown {
   background: #333;
   color: #f0f2f5;
 }
 
-.markdown code {
-  background-color: #000;
-  color: white;
+.markdown a {
+  color: #63a969;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.markdown a:hover {
+  color: #0d603b;
+  text-decoration: underline;
 }
 
 .move {

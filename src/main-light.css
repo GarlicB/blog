@@ -19,9 +19,24 @@ body {
   color: #3a3a3a;
 }
 
+.post-list-item {
+  border-bottom: 1px solid #c5cae9;
+}
+
 .markdown {
   background: #ffffff;
   color: #333;
+}
+
+.markdown a {
+  color: #1a73e8;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.markdown a:hover {
+  color: #0b47a0;
+  text-decoration: underline;
 }
 
 .move {
