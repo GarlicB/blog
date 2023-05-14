@@ -1,38 +1,84 @@
-# My ReactJS + Vite + TypeScript Blog
+# GarlicB.log
 
-This project is a simple blog application built using ReactJS, Vite, TypeScript, and react-markdown. It demonstrates how to create a blog with a list of posts, routing, and rendering Markdown content in a React application.
+GarlicB.log은 자체 제작한 블로그 샘플 페이지입니다.
 
-## Features
+Jekyll 같은 유명한 템플릿을 사용하는 대신, 블로그 포스팅을 간편하게 배포하고 사용자가 직관적으로 콘텐츠를 즐길 수 있는 색다른 경험을 제공하기 위해 디자인과 스타일링을 직접 구현했습니다.
 
-- ReactJS for building user interfaces
-- Vite for fast development and bundling
-- TypeScript for static typing and improved developer experience
-- react-markdown for rendering Markdown content in posts
-- react-router-dom for client-side routing
+또한, 이 블로그는 GitHub Pages를 활용하여 정적 호스팅과 CI/CD를 구성하였습니다. 이를 통해 최신 포스트를 신속하게 업데이트하고 안정적으로 배포할 수 있습니다. GitHub의 강력한 기능을 활용하여 개발과 배포를 원활하게 진행하고, 커뮤니티와의 협업을 촉진합니다.
 
-## Getting Started
+GarlicB.log은 TypeScript와 ReactJS, Vite 등과 같은 주요 기술을 사용하여 구현되었습니다. TypeScript를 통해 타입 안정성을 강화하고 코드 유지 보수성을 향상시켰으며, ReactJS를 선택한 이유는 그 유연성과 재사용 가능성을 통해 사용자 친화적인 UI를 제공하기 위함입니다. 또한, Vite를 사용하여 빠른 개발 속도와 효율적인 번들링을 실현했습니다.
 
-To get started with this project, follow these steps:
+GarlicB.log의 저장소를 복제하고 필요한 종속성을 설치한 후 로컬에서 실행할 수 있습니다. 또한, 빌드 명령을 실행하여 정적 파일로 빌드할 수 있습니다. 이를 통해 개발 환경을 구성하고 블로그를 로컬에서 테스트할 수 있습니다.
 
-1. Clone the repository:
+## 1. 저장소 설치 방법
 
+1. 저장소를 클론합니다.
    ```bash
-   git clone https://github.com/your-username/your-repo.git
-   cd your-repo
+   git clone https://github.com/GarlicB/blog.git
+   ```
+2. 프로젝트 디렉토리로 이동한 후 필요한 종속성을 설치합니다.
+   ```bash
+   yarn install
+   ```
+3. 로컬에서 프로젝트를 실행합니다.
+   ```bash
+   yarn vite
+   ```
+4. 로컬에서 빌드를 수행합니다.
+   ```bash
+   yarn build
    ```
 
-2. Install dependencies:
+## 2. 블로그 기능
 
-   ```bash
-   npm install
+- 포스팅 동적 라우팅: 포스팅은 코드에서 동적으로 라우팅되며 URL 경로에 따라 해당 포스팅을 표시합니다.
+- 기본 인덱싱: 인덱스 페이지는 최신 10개의 글을 기준으로 표시됩니다.
+- 다크 모드: 사용자는 다크 모드를 토글하여 활성화할 수 있습니다.
+- 상태 관리: React Context API를 사용하여 애플리케이션의 상태를 전역 관리합니다.
+  _지속적으로 기능 추가 예정_
+
+## 3. 포스팅
+
+1. 포스팅할 마크다운 파일을 `public/posts/YYYY/DD/파일명.md` 경로에 업로드합니다.
+2. `public/posts/metadata.json` 파일에 다음과 같은 형식으로 메타데이터를 추가합니다.
+   ```json
+   {
+     "title": "포스팅 제목",
+     "summary": "포스팅 요약",
+     "date": "YYYY-MM-DD",
+     "slug": "파일명"
+   }
    ```
+   - `date` 필드는 `YYYY-MM-DD` 형식으로 작성하며, 경로의 년도와 월과 일치해야 합니다.
+   - `slug` 필드는 파일명과 일치해야 합니다.
 
-3. Start the development server:
+## ! 기록된 트러블 슈팅
 
-   ```bash
-   npm run dev
-   ```
+- 마크다운의 코드 블록 하이라이팅을 적용하려면 `rehype-highlight` 라이브러리를 설치하면 됩니다.
 
-The above commands will clone the repository, navigate to the project directory, install the required dependencies, and start the development server. You can then access the blog application in your browser and begin exploring the features.
+```
+yarn add rehype-highlight
+```
 
-Feel free to customize the application according to your needs and add more functionality as desired. Happy blogging!
+- 정적 호스팅으로 SPA가 동작하지 않아 새로고침 시 GitHub Pages의 404 페이지가 나타날 경우, `package.json` 파일에 다음과 같이 `build` 스크립트를 수정하여 해결할 수 있습니다.
+
+```json
+"build": "tsc && vite build && cp dist/index.html dist/404.html"
+```
+
+> 이렇게 하면 404.html의 내용이 index.html로 복사되어 새로고침 시 라우팅이 유지될 수 있습니다.
+
+- 로컬 실행 후 실제 기기를 사용하여 접속하려면 `vite.config.js` 파일에서 다음 내용을 수정해야 합니다.
+
+```javascript
+export default defineConfig({
+  ...
+  server: {
+    host: "0.0.0.0",
+    port: 5173,
+  }
+  ...
+});
+```
+
+> `server` 객체의 `host`를 `"0.0.0.0"`으로 설정하고, `port`를 원하는 포트 번호로 변경하면 모바일 기기에서도 접속할 수 있습니다.

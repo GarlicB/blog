@@ -62,16 +62,10 @@ div {
 }
 
 .home-button a {
-  background-color: #4a4a4a;
   border-radius: 3px;
   color: #f1f1f1;
   padding: 0.5rem 1rem;
   text-decoration: none;
-  transition: background-color 0.3s;
-}
-
-.home-button a:hover {
-  background-color: #3c3c3c;
 }
 
 .post {
@@ -94,6 +88,11 @@ div {
   text-align: right;
 }
 
+.post-list-title {
+  font-weight: 900;
+  font-size: 1.3rem;
+}
+
 .post-list-date {
   font-weight: 500;
   padding: 0.2rem;
@@ -101,13 +100,13 @@ div {
 }
 
 .post-list-summary {
-  font-size: 14px;
+  font-size: 0.9rem;
   font-weight: 350;
   line-height: 1.5;
-  margin-top: 8px;
+  margin: 0.1rem 0.4rem;
 }
 
-.post-list-summary span {
+.post-list-item > div > span {
   display: inline-block;
   width: 100%;
   white-space: nowrap;
@@ -153,7 +152,7 @@ a {
 }
 
 .loading span {
-  font-size: 24px;
+  font-size: 1rem;
   font-weight: bold;
 }
 
@@ -207,8 +206,10 @@ a {
 .markdown blockquote {
   border-left: 4px solid #ddd;
   color: #777;
+  font-size: 0.9rem;
   font-style: italic;
-  padding-left: 1em;
+  margin: 0rem;
+  padding-left: 0.6rem;
 }
 
 .markdown img {
