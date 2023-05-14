@@ -9,6 +9,7 @@ const Footer: React.FC = () => {
       >
         <div>View Code on GitHub</div>
       </a>
+      <br />
     </div>
   );
 };
